@@ -24,13 +24,20 @@ function create_card(pokemon) {
   card_pokemon.innerHTML = `
     <div class="topo_card  ${pokemon.types[0].type.name}"><h2>${pokemon.name}</h2></div>
     <img class="pokemon_sprite" src="${pokemon.sprites.other.dream_world.front_default}" >
-    <div class="info">Status${pokemon.stats[1].base_stat}
+    <div class="container_status">
+    <div class="status">Status</div>
+    <div class="info">
+
     <div class="esquerda_card">
     <div>Status base: </div>
     <div>Type: </div>
     </div>
 
-    <div class="direita"></div>
+    <div class="direita_card">
+    <div>${pokemon.stats[1].base_stat}</div>
+    <div>${pokemon.types[0].type.name}</div>
+    </div>
+    </div>
     </div>
  `;
   display_pokedex.innerHTML = "";

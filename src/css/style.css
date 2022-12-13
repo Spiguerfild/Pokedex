@@ -75,7 +75,7 @@ main {
     align-items: center;
     font-size: 25px;
 
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(26, 26, 26);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
@@ -84,7 +84,7 @@ main {
 .cartao_pokemon img {
     width: 50%;
     position: relative;
-    top: -110px;
+    top: -67px;
     transform: rotate(11deg);
 
 }
@@ -216,14 +216,51 @@ main {
 .water {
     background-color: #3393dd;
 }
-.water{
+.water_border{
     border: 6px solid #3393dd;
 }
 /*========================================================================================================*/
 .topo_card {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     padding: 0 15px;
     width: 100%;
     height: 40%;
     border-radius: 0 0 56px 0;
+    font-size: 50px;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(255, 255, 255, 0.52);
+    
+
+}
+.container_status{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    top: -20px;
+       height: 200px;
+    justify-content: space-between;
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(255, 255, 255, 0.52);
+   
+   
+}
+.info{
+    display: flex;
+    width: 100%;
+ justify-content: space-evenly;
+ height: 100%;
+ flex-wrap: wrap;
+ align-content:space-around ;
+}
+.status{
+    font-size:  40px; ;
+}
+.esquerda_card{
+
 }
